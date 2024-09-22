@@ -54,5 +54,19 @@
       </section>
     </main>
     <footer></footer>
+    <div class="ad-overlay" id="ad-overlay">
+      <div class="advertisement">
+        <img src="./img/coffee-rec.jpg" alt="coffee" width="650" height="320" />
+      </div>
+    </div>
+    <script>
+      window.onload = function() {
+      var adOverlay = document.getElementById('ad-overlay');
+      setTimeout(function() {
+      adOverlay.classList.add('hidden');
+      }, 5000);
+      }
+    </script> 
+    </overlay-section>
   </body>
 </html>
