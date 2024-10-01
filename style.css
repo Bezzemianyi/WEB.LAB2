@@ -136,6 +136,38 @@
   background-color: #daa520;
   outline: transparent;
 }
+
+.fly-in-text {
+  font-size: 4rem;
+  font-weight: bold;
+  overflow: hidden;
+  margin-left: 300px;
+}
+
+.fly-in-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(100px);
+  animation: fly-in 0.6s forwards;
+}
+
+.fly-in-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+.fly-in-text span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.fly-in-text span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+@keyframes fly-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .ad-overlay {
   background-color: rgba(20, 20, 24, 0.4);
   position: fixed;
